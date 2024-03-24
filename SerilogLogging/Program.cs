@@ -9,11 +9,13 @@ namespace SerilogLogging
         public static void Main(string[] args)
         {
 
-            Log.Logger = new LoggerConfiguration().
+           /* 
+            * Log.Logger = new LoggerConfiguration().
                 MinimumLevel.Information().
                 WriteTo.Console().
                 WriteTo.File("logs/logs-.txt", rollingInterval: RollingInterval.Day).
                 CreateLogger();
+           */
 
             var builder = WebApplication.CreateBuilder(args);
 
